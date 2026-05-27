@@ -4,61 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <title>My Portfolio</title>
+    <title>Ux49 - Portfolio</title>
 </head>
 
 <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+
     <nav>
-        <div class="logo">
-            <h1>Ux49</h1>
-        </div>
+        <div class="logo">Ux49</div>
         <ul>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-tag">PORTFOLIO_2026</div>
     </nav>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sapiente reprehenderit
-                blanditiis veniam. Similique modi, nisi optio ipsum eum inventore tempora qui, recusandae iste,
-                quis necessitatibus rem temporibus sint quidem omnis molestias.</p>
-            <img src="assets/img/logo.jpg" alt="Profile Picture">
-        </section>
 
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project">
-                <div class="project-card">
-                    <h2>Project One</h2>
+    <main>
+
+        <section id="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-label">// 001 - ABOUT ME</div>
+                    <h1>I build<br><span class="accent">things.</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sapiente reprehenderit
                         blanditiis veniam. Similique modi, nisi optio ipsum eum inventore tempora qui, recusandae iste,
-                        quis necessitatibus rem temporibus sint quidem omnis molestias.</p>
+                        quis necessitatibus rem temporibus sint.</p>
+                    <div class="tag-row">
+                        <span class="tag">DESIGN</span>
+                        <span class="tag">DEV</span>
+                        <span class="tag">UX</span>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h2>Project Two</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sapiente reprehenderit
-                        blanditiis veniam. Similique modi, nisi optio ipsum eum inventore tempora qui, recusandae iste,
-                        quis necessitatibus rem temporibus sint quidem omnis molestias.</p>
-                </div>
-                <div class="project-card">
-                    <h2>Project Two</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sapiente reprehenderit
-                        blanditiis veniam. Similique modi, nisi optio ipsum eum inventore tempora qui, recusandae iste,
-                        quis necessitatibus rem temporibus sint quidem omnis molestias.</p>
+                <div class="about-img-wrap">
+                    <img src="assets/img/logo.jpg" alt="Profile Picture">
+                    <div class="img-shadow"></div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>You can reach me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <div class="marquee-bar">
+            <div class="marquee-track">
+                <span>AVAILABLE FOR WORK</span>
+                <span>★</span>
+                <span>FRONTEND DEVELOPER</span>
+                <span>★</span>
+                <span>UI DESIGNER</span>
+                <span>★</span>
+                <span>AVAILABLE FOR WORK</span>
+                <span>★</span>
+                <span>FRONTEND DEVELOPER</span>
+                <span>★</span>
+                <span>UI DESIGNER</span>
+                <span>★</span>
+                <span>AVAILABLE FOR WORK</span>
+                <span>★</span>
+                <span>FRONTEND DEVELOPER</span>
+                <span>★</span>
+                <span>UI DESIGNER</span>
+                <span>★</span>
+            </div>
+        </div>
+
+        <section id="projects">
+            <div class="section-label">// 002 - PROJECTS</div>
+            <h2 class="section-title">Selected<br>Work.</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="card-num">01</div>
+                    <div class="card-body">
+                        <h3>Project One</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sapiente reprehenderit
+                            blanditiis veniam. Similique modi nisi optio ipsum eum.</p>
+                        <div class="card-footer">
+                            <span class="tag small">REACT</span>
+                            <span class="tag small">CSS</span>
+                            <a href="#" class="card-link">VIEW →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="card-num">02</div>
+                    <div class="card-body">
+                        <h3>Project Two</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sapiente reprehenderit
+                            blanditiis veniam. Similique modi nisi optio ipsum eum.</p>
+                        <div class="card-footer">
+                            <span class="tag small">NODE</span>
+                            <span class="tag small">API</span>
+                            <a href="#" class="card-link">VIEW →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-num">03</div>
+                    <div class="card-body">
+                        <h3>Project Three</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sapiente reprehenderit
+                            blanditiis veniam. Similique modi nisi optio ipsum eum.</p>
+                        <div class="card-footer">
+                            <span class="tag small">FIGMA</span>
+                            <span class="tag small">UX</span>
+                            <a href="#" class="card-link">VIEW →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
+
+
+        <section id="contact">
+            <div class="contact-inner">
+                <div class="section-label">// 003 - CONTACT</div>
+                <h2 class="section-title">Let's<br>Talk.</h2>
+                <p>Got a project in mind? Let's build something together. Drop me a line and I'll get back to you.</p>
+                <a href="mailto:youremail@example.com" class="cta-btn">
+                    youremail@example.com <span>↗</span>
+                </a>
+            </div>
+            <div class="contact-deco">GET IN TOUCH</div>
+        </section>
+
     </main>
+
+    <footer>
+        <span>© 2026 Ux49</span>
+        <span>Made with ♥ and too much coffee</span>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
