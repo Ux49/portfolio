@@ -381,7 +381,7 @@ main {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem 1.8rem;
-    background: var(--ctp-yellow);
+    background: var(--ctp-blue);
     color: var(--ctp-crust);
     text-decoration: none;
     font-size: 0.8rem;
@@ -470,5 +470,304 @@ footer {
         padding: 1.5rem;
         flex-direction: column;
         gap: 0.4rem;
+    }
+}
+
+#education {
+    padding: 7rem 0;
+    border-top: var(--border);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: #e2e2e2;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2rem;
+    top: 14px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1.5px solid #aaa;
+    transform: translateX(-4px);
+}
+
+.timeline-dot.active {
+    background: #185FA5;
+    border-color: #185FA5;
+}
+
+.edu-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 0px;
+    padding: 1rem 1.25rem;
+}
+
+.card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.card-institution {
+    font-size: 13px;
+    font-weight: 500;
+    color: #888;
+    margin: 0 0 2px;
+}
+
+.card-degree {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin: 0 0 8px;
+}
+
+.card-period {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #aaa;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.65;
+    margin: 0 0 10px;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 99px;
+    background: #f4f4f4;
+    color: #555;
+    border: 1px solid #e8e8e8;
+}
+
+.card-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #185FA5;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.edu-subtitle {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 460px;
+}
+
+#education {
+    padding: 7rem 0;
+    border-top: var(--border);
+}
+
+.education-inner {
+    position: relative;
+}
+
+.education-deco {
+    font-family: 'Chakra Petch', serif;
+    font-size: clamp(2rem, 5vw, 5.5rem);
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: var(--ctp-surface0);
+    line-height: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    user-select: none;
+    position: absolute;
+    right: -3rem;
+    top: 0;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: var(--ctp-surface2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2rem;
+    top: 18px;
+    width: 9px;
+    height: 9px;
+    border-radius: 0;
+    background: var(--ctp-surface1);
+    border: 1.5px solid var(--ctp-surface2);
+    transform: translateX(-4px);
+}
+
+.timeline-dot.active {
+    background: var(--ctp-yellow);
+    border-color: var(--ctp-yellow);
+}
+
+.edu-card {
+    background: var(--ctp-mantle);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    padding: 1rem 1.2rem;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.edu-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--ctp-text);
+}
+
+.card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.card-institution {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ctp-mauve);
+    margin: 0 0 4px;
+}
+
+.card-degree {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ctp-text);
+    margin: 0 0 8px;
+    letter-spacing: -0.3px;
+}
+
+.card-period {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--ctp-overlay0);
+    white-space: nowrap;
+    padding-top: 2px;
+    text-transform: uppercase;
+}
+
+.card-desc {
+    font-size: 0.8rem;
+    color: var(--ctp-subtext0);
+    line-height: 1.7;
+    margin: 0 0 1rem;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* override the global .tag for edu cards */
+.edu-card .tag {
+    font-size: 0.6rem;
+    padding: 4px 10px;
+    border-radius: 0;
+    background: transparent;
+    color: var(--ctp-subtext0);
+    border: 2px solid var(--ctp-overlay0);
+    box-shadow: 2px 2px 0 var(--ctp-overlay0);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.card-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--ctp-mauve);
+    text-decoration: none;
+    margin-top: 0.8rem;
+    transition: color 0.2s;
+}
+
+.card-link:hover {
+    color: var(--ctp-yellow);
+}
+
+.edu-subtitle {
+    font-size: 0.9rem;
+    color: var(--ctp-subtext1);
+    max-width: 480px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .education-deco {
+        position: static;
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 2.5rem;
+        color: var(--ctp-surface1);
+        margin-top: 3rem;
     }
 }
