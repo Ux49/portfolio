@@ -32,7 +32,7 @@ portfolio/
 ├── assets/
 │   ├── fonts/              # Custom typefaces
 │   ├── logos/              # Brand assets
-└── readme.md               # You are here
+└── readme.md        
 ```
 
 ---
