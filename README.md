@@ -85,6 +85,14 @@ Unauthorized reproduction or distribution is prohibited.
 ```
 
 ---
+## SOME SCREENSHOTS
+<img width="1895" height="948" alt="image" src="https://github.com/user-attachments/assets/8c180bec-d5e8-4655-86a9-8a4c934e2c68" /> 
+
+<img width="1902" height="935" alt="image" src="https://github.com/user-attachments/assets/c134d280-0afc-450c-b021-baa261240b0e" />
+
+<img width="1108" height="710" alt="image" src="https://github.com/user-attachments/assets/2fff3858-363f-4c62-9c62-edccb609d834" />
+
+
 
 <div align="center">
   Designed & Developed by <strong>UX49</strong>
