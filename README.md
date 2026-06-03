@@ -31,7 +31,7 @@ portfolio/
 │   └── script.js           # Interactivity & logic
 ├── assets/
 │   ├── fonts/              # Custom typefaces
-│   ├── logos/              # Brand assets
+│   ├── img/                # Brand assets
 └── readme.md        
 ```
 
