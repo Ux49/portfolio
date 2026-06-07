@@ -7,36 +7,50 @@
 }
 
 :root {
-    --ctp-rosewater: #f5e0dc;
-    --ctp-flamingo: #f2cdcd;
-    --ctp-pink: #f5c2e7;
-    --ctp-mauve: #cba6f7;
-    --ctp-red: #f38ba8;
-    --ctp-maroon: #eba0ac;
-    --ctp-peach: #fab387;
-    --ctp-yellow: #f9e2af;
-    --ctp-green: #a6e3a1;
-    --ctp-teal: #94e2d5;
-    --ctp-sky: #89dceb;
-    --ctp-sapphire: #74c7ec;
-    --ctp-blue: #89b4fa;
-    --ctp-lavender: #b4befe;
-    --ctp-text: #cdd6f4;
-    --ctp-subtext1: #bac2de;
-    --ctp-subtext0: #a6adc8;
-    --ctp-overlay2: #9399b2;
-    --ctp-overlay1: #7f849c;
-    --ctp-overlay0: #6c7086;
-    --ctp-surface2: #585b70;
-    --ctp-surface1: #45475a;
-    --ctp-surface0: #313244;
-    --ctp-base: #1e1e2e;
-    --ctp-mantle: #181825;
-    --ctp-crust: #11111b;
+    --brand-black:    #0C0C0C;
+    --brand-black-2:  #161616;
+    --brand-black-3:  #1F1F1F;
+    --brand-black-4:  #2A2A2A;
+    --brand-black-5:  #363636;
+    --brand-lime:     #C8F135;
+    --brand-lime-dim: #9BBD1F;
+    --brand-orange:   #FF5C35;
+    --brand-silver:   #B0B8C4;
+    --brand-silver-2: #8A939F;
+    --brand-silver-3: #5C6370;
+    --brand-silver-4: #3A3F47;
+    --brand-silver-5: #252A30;
+    --brand-white:    #F5F2EC;
 
-    --border: 3px solid var(--ctp-text);
-    --shadow: 6px 6px 0px var(--ctp-text);
-    --shadow-accent: 6px 6px 0px var(--ctp-yellow);
+    --ctp-rosewater: #f5e0dc;
+    --ctp-flamingo:  #f2cdcd;
+    --ctp-pink:      #f5c2e7;
+    --ctp-mauve:     var(--brand-lime-dim);   
+    --ctp-red:       var(--brand-orange);     
+    --ctp-maroon:    #eba0ac;
+    --ctp-peach:     var(--brand-orange);
+    --ctp-yellow:    var(--brand-lime);     
+    --ctp-teal:      #94e2d5;
+    --ctp-sky:       #89dceb;
+    --ctp-sapphire:  #74c7ec;
+    --ctp-blue:      var(--brand-silver);    
+    --ctp-lavender:  #b4befe;
+    --ctp-text:      var(--brand-white);      
+    --ctp-subtext1:  var(--brand-silver);     
+    --ctp-subtext0:  var(--brand-silver-2);  
+    --ctp-overlay2:  var(--brand-silver-3);
+    --ctp-overlay1:  var(--brand-silver-3);
+    --ctp-overlay0:  var(--brand-silver-4);
+    --ctp-surface2:  var(--brand-silver-4);
+    --ctp-surface1:  var(--brand-black-5);
+    --ctp-surface0:  var(--brand-black-4);
+    --ctp-base:      var(--brand-black-2);    
+    --ctp-mantle:    var(--brand-black-3);   
+    --ctp-crust:     var(--brand-black);      
+
+    --border:        3px solid var(--brand-white);
+    --shadow:        6px 6px 0px var(--brand-white);
+    --shadow-accent: 6px 6px 0px var(--brand-lime);
 }
 
 *,
@@ -64,7 +78,7 @@ body {
 .cursor {
     width: 12px;
     height: 12px;
-    background: var(--ctp-red);
+    background: var(--brand-orange);
     position: fixed;
     pointer-events: none;
     z-index: 9999;
@@ -75,7 +89,7 @@ body {
 .cursor-follower {
     width: 32px;
     height: 32px;
-    border: 2px solid var(--ctp-red);
+    border: 2px solid var(--brand-orange);
     position: fixed;
     pointer-events: none;
     z-index: 9998;
@@ -98,7 +112,7 @@ nav {
 .logo {
     font-weight: 900;
     font-size: 1.4rem;
-    color: var(--ctp-yellow);
+    color: var(--brand-lime);
     letter-spacing: -1px;
 }
 
@@ -118,12 +132,12 @@ nav li a {
 }
 
 nav li a:hover {
-    color: var(--ctp-yellow);
+    color: var(--brand-lime);
 }
 
 .nav-tag {
     font-size: 0.65rem;
-    color: var(--ctp-overlay1);
+    color: var(--brand-silver-3);
     letter-spacing: 0.15em;
 }
 
@@ -136,7 +150,7 @@ main {
 .section-label {
     font-size: 0.7rem;
     letter-spacing: 0.2em;
-    color: var(--ctp-mauve);
+    color: var(--brand-lime-dim);
     margin-bottom: 1rem;
 }
 
@@ -172,7 +186,7 @@ main {
 }
 
 .about-text h1 .accent {
-    color: var(--ctp-yellow);
+    color: var(--brand-lime);
     display: block;
 }
 
@@ -195,16 +209,16 @@ main {
     font-weight: 700;
     letter-spacing: 0.12em;
     padding: 6px 14px;
-    border: 2px solid var(--ctp-overlay0);
-    color: var(--ctp-subtext0);
+    border: 2px solid var(--brand-silver-4);
+    color: var(--brand-silver-2);
     background: transparent;
-    box-shadow: 3px 3px 0 var(--ctp-overlay0);
+    box-shadow: 3px 3px 0 var(--brand-silver-4);
 }
 
 .tag.small {
     font-size: 0.6rem;
     padding: 4px 10px;
-    box-shadow: 2px 2px 0 var(--ctp-overlay0);
+    box-shadow: 2px 2px 0 var(--brand-silver-4);
 }
 
 .about-img-wrap {
@@ -226,7 +240,7 @@ main {
     position: absolute;
     inset: 0;
     border: var(--border);
-    background: var(--ctp-yellow);
+    background: var(--brand-lime);
     transform: translate(10px, 10px);
     z-index: 0;
 }
@@ -234,7 +248,7 @@ main {
 .marquee-bar {
     border-top: var(--border);
     border-bottom: var(--border);
-    background: var(--ctp-yellow);
+    background: var(--brand-lime);
     overflow: hidden;
     padding: 14px 0;
     margin: 0 -3rem;
@@ -251,7 +265,7 @@ main {
     font-family: 'Shivaraja', serif;
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--ctp-crust);
+    color: var(--brand-black);
     letter-spacing: 0.1em;
     white-space: nowrap;
 }
@@ -283,16 +297,16 @@ main {
 
 .project-card:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 9px 9px 0px var(--ctp-text);
+    box-shadow: 9px 9px 0px var(--brand-white);
 }
 
 .project-card.featured {
-    border-color: var(--ctp-yellow);
+    border-color: var(--brand-lime);
     box-shadow: var(--shadow-accent);
 }
 
 .project-card.featured:hover {
-    box-shadow: 9px 9px 0px var(--ctp-yellow);
+    box-shadow: 9px 9px 0px var(--brand-lime);
 }
 
 .card-num {
@@ -300,12 +314,12 @@ main {
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.15em;
-    color: var(--ctp-overlay0);
+    color: var(--brand-silver-4);
     padding: 1rem 1.2rem 0;
 }
 
 .project-card.featured .card-num {
-    color: var(--ctp-yellow);
+    color: var(--brand-lime);
 }
 
 .card-body {
@@ -326,7 +340,7 @@ main {
 
 .card-body p {
     font-size: 0.8rem;
-    color: var(--ctp-subtext0);
+    color: var(--brand-silver-2);
     line-height: 1.7;
     flex: 1;
     margin-bottom: 1.5rem;
@@ -341,7 +355,7 @@ main {
 
 .card-link {
     margin-left: auto;
-    color: var(--ctp-mauve);
+    color: var(--brand-lime-dim);
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 700;
@@ -350,7 +364,7 @@ main {
 }
 
 .card-link:hover {
-    color: var(--ctp-yellow);
+    color: var(--brand-lime);
 }
 
 #education {
@@ -374,7 +388,7 @@ main {
     font-size: clamp(2rem, 5vw, 5.5rem);
     font-weight: 900;
     letter-spacing: -2px;
-    color: var(--ctp-surface0);
+    color: var(--brand-black-4);
     line-height: 1;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -398,7 +412,7 @@ main {
     top: 8px;
     bottom: 8px;
     width: 1px;
-    background: var(--ctp-surface2);
+    background: var(--brand-silver-4);
 }
 
 .timeline-item {
@@ -416,14 +430,14 @@ main {
     top: 18px;
     width: 9px;
     height: 9px;
-    background: var(--ctp-surface1);
-    border: 1.5px solid var(--ctp-surface2);
+    background: var(--brand-black-5);
+    border: 1.5px solid var(--brand-silver-4);
     transform: translateX(-4px);
 }
 
 .timeline-dot.active {
-    background: var(--ctp-yellow);
-    border-color: var(--ctp-yellow);
+    background: var(--brand-lime);
+    border-color: var(--brand-lime);
 }
 
 .edu-card {
@@ -436,7 +450,7 @@ main {
 
 .edu-card:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 9px 9px 0px var(--ctp-text);
+    box-shadow: 9px 9px 0px var(--brand-white);
 }
 
 .card-top {
@@ -452,7 +466,7 @@ main {
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--ctp-mauve);
+    color: var(--brand-lime-dim);
     margin: 0 0 4px;
 }
 
@@ -468,7 +482,7 @@ main {
 .card-period {
     font-size: 0.65rem;
     letter-spacing: 0.15em;
-    color: var(--ctp-overlay0);
+    color: var(--brand-silver-4);
     white-space: nowrap;
     padding-top: 2px;
     text-transform: uppercase;
@@ -476,7 +490,7 @@ main {
 
 .card-desc {
     font-size: 0.8rem;
-    color: var(--ctp-subtext0);
+    color: var(--brand-silver-2);
     line-height: 1.7;
     margin: 0 0 1rem;
 }
@@ -491,9 +505,9 @@ main {
     font-size: 0.6rem;
     padding: 4px 10px;
     background: transparent;
-    color: var(--ctp-subtext0);
-    border: 2px solid var(--ctp-overlay0);
-    box-shadow: 2px 2px 0 var(--ctp-overlay0);
+    color: var(--brand-silver-2);
+    border: 2px solid var(--brand-silver-4);
+    box-shadow: 2px 2px 0 var(--brand-silver-4);
     font-weight: 700;
     letter-spacing: 0.12em;
 }
@@ -503,7 +517,7 @@ main {
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-    color: var(--ctp-mauve);
+    color: var(--brand-lime-dim);
     text-decoration: none;
     margin-top: 0.8rem;
     transition: color 0.2s;
@@ -511,7 +525,7 @@ main {
 }
 
 .edu-card .card-link:hover {
-    color: var(--ctp-yellow);
+    color: var(--brand-lime);
 }
 
 #experience {
@@ -542,20 +556,20 @@ main {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem 1.8rem;
-    background: var(--ctp-blue);
-    color: var(--ctp-crust);
+    background: var(--brand-orange);
+    color: var(--brand-black);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     border: var(--border);
-    box-shadow: 5px 5px 0 var(--ctp-text);
+    box-shadow: 5px 5px 0 var(--brand-white);
     transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .cta-btn:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 7px 7px 0 var(--ctp-text);
+    box-shadow: 7px 7px 0 var(--brand-white);
 }
 
 .cta-btn span {
@@ -567,7 +581,7 @@ main {
     font-size: clamp(2rem, 5vw, 5.5rem);
     font-weight: 900;
     letter-spacing: -2px;
-    color: var(--ctp-surface0);
+    color: var(--brand-black-4);
     line-height: 1;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -581,7 +595,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.72rem;
-    color: var(--ctp-overlay0);
+    color: var(--brand-silver-4);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -625,7 +639,7 @@ footer {
         writing-mode: horizontal-tb;
         transform: none;
         font-size: 2.5rem;
-        color: var(--ctp-surface1);
+        color: var(--brand-black-5);
     }
 
     .education-deco {
@@ -633,7 +647,7 @@ footer {
         writing-mode: horizontal-tb;
         transform: none;
         font-size: 2.5rem;
-        color: var(--ctp-surface1);
+        color: var(--brand-black-5);
         margin-top: 3rem;
     }
 
