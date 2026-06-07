@@ -5,7 +5,7 @@
 | Property      | Value                        |
 |---------------|------------------------------|
 | **UI Theme**  | Neobrutalism                 |
-| **Color Palette** | Catppuccin Mocha         |
+| **Color Palette** | Electic Lime             |
 | **Logo**      | Designed by UX49             |
 
 
@@ -37,7 +37,7 @@ portfolio/
 
 ---
 
-## Catppuccin Mocha - Color Reference
+## Electric lime  - Brandable color palatte
 
 
 ## Neobrutalism - Design Principles
