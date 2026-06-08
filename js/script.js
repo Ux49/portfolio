@@ -31,3 +31,5 @@ document.querySelectorAll('button, a, input').forEach(el => {
         follower.style.borderColor = '#f38ba8';
     });
 });
+
+alert(" Dear Reviewers I have been waiting for my project review since last 12 days from this day of commit so due to recent changes don't reject my project , Better projects are on the way good things takes time : ")
