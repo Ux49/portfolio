@@ -32,4 +32,4 @@ document.querySelectorAll('button, a, input').forEach(el => {
     });
 });
 
-alert(" Dear Reviewers I have been waiting for my project review since last 12 days from this day of commit so due to recent changes don't reject my project , Better projects are on the way good things takes time : ")
+alert(" Dear Reviewers I have been waiting for my project review since last 12 days from this day of commit so due to recent changes don't reject my project , Better projects are on the way good things takes time and I recently knew how to even use js basic so this is my 1st project with js  : ")
