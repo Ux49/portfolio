@@ -37,7 +37,7 @@ portfolio/
 
 ---
 
-## Electric lime  - Brandable color palatte
+## Electric lime  -  color palatte
 
 
 ## Neobrutalism - Design Principles
